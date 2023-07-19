@@ -1,0 +1,4 @@
+ Day 1: HTML Basics
+    Learn the basic structure of an HTML document (<!DOCTYPE>, <html>, <head>, <body>).
+    Understand the purpose of HTML tags and elements.
+    Practice creating a simple HTML page with headings, paragraphs, and lists
