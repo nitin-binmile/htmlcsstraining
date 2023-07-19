@@ -2,3 +2,7 @@
     Learn the basic structure of an HTML document (<!DOCTYPE>, <html>, <head>, <body>).
     Understand the purpose of HTML tags and elements.
     Practice creating a simple HTML page with headings, paragraphs, and lists
+ Assignment Day 2: Build a Responsive Landing Page
+   Apply the concepts learned on Day 3 and Day 4 to create a responsive landing page.
+   Design a visually appealing layout with appropriate use of headings, paragraphs, images, and links.
+   Use CSS techniques like flexbox or grid to ensure the page adjusts well on different screen sizes.
