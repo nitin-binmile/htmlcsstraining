@@ -474,15 +474,14 @@ section {
 }
 
 .main-content .section-title {
-    color: var(--text-color, #252B42);
+    color: var(--light-text-color, #FFF);
 
     /* h2 */
     font-family: Montserrat;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 50px;
-    /* 125% */
+    line-height: 50px; /* 125% */
     letter-spacing: 0.2px;
 }
 
