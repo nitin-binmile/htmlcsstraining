@@ -17,10 +17,11 @@
     --primary-text-color: #8D5CF6;
     --second-text-color: #737373;
     --secondary: #F3CD03;
-    --secondary-color-1: #FF7B52;
+    --secondary-color-1: #0061FF;
     --success-color: #2DC071;
     --text-color: #252B42;
     --light-text-color: #FFF;
+    
 }
 
 * {
@@ -43,7 +44,7 @@
 
 header {
     padding: 0px var(--horizontal-padding);
-    background-image: url(assets/backgroudImg.jpg);
+    
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -187,11 +188,15 @@ nav {
     :root {
         --horizontal-padding: 100px;
     }
+    
 }
 
 @media screen and (min-width:1100px) {
     :root {
         --horizontal-padding: 195px;
+    }
+    header{
+        background-image: url(assets/backgroudImg.jpg);
     }
 }
 
@@ -318,6 +323,7 @@ nav {
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .header-row-left {
@@ -372,7 +378,7 @@ section {
     display: flex;
     padding: var(--vertical-padding) 0px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 80px;
     flex-shrink: 0;
 }
@@ -388,6 +394,8 @@ section {
     height: 395px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 15px;
 }
 
@@ -469,6 +477,40 @@ section {
     gap: 35px;
 }
 
+.container-3 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+    padding: var(--vertical-internal-padding) 0px;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-3-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 380px;
+    
+}
+.container3-left div{
+    display: flex;
+    gap: 5px;
+}
+
+.container3-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    width: 350px;
+    height: 363px;
+    
+}
+
 
 
 
@@ -490,7 +532,7 @@ section {
 }
 
 .main-content .section-tag {
-    color: var(--primary-text-color, #96BB7C);
+    color: var(--primary-color);
 
     /* h6 */
     font-family: Montserrat;
@@ -504,8 +546,9 @@ section {
 
 .main-content .section-title {
 
-
+    
     /* h2 */
+    color: var(--text-color);
     font-family: Montserrat;
     font-size: 40px;
     font-style: normal;
@@ -517,7 +560,7 @@ section {
 
 .main-content .paragraph {
     color: var(--second-text-color, #737373);
-
+    
     /* paragraph */
     font-family: Montserrat;
     font-size: 14px;
@@ -560,7 +603,7 @@ section {
 
 .productcard .product-title {
     color: var(--text-color, #252B42);
-
+    
     /* h5 */
     font-family: Montserrat;
     font-size: 16px;
@@ -573,7 +616,7 @@ section {
 
 .productcard .product-category {
     color: var(--primary-text-color, #96BB7C);
-
+    
     /* link */
     font-family: Montserrat;
     font-size: 14px;
@@ -593,7 +636,7 @@ section {
 
 .sales h6 {
     color: var(--second-text-color, #737373);
-
+    
     /* h6 */
     font-family: Montserrat;
     font-size: 14px;
@@ -602,14 +645,14 @@ section {
     line-height: 24px;
     /* 171.429% */
     letter-spacing: 0.2px;
-
-
+    
+    
 }
 
 
 .product-decription {
     color: #737373;
-
+    
     /* paragraph */
     font-family: Montserrat;
     font-size: 14px;
@@ -630,7 +673,7 @@ section {
 .price-actual {
     color: var(--muted-color, #BDBDBD);
     text-align: center;
-
+    
     /* h5 */
     font-family: Montserrat;
     font-size: 16px;
@@ -642,9 +685,9 @@ section {
 }
 
 .price-discounted {
-    color: var(--secondary-color-1, #FFAB71);
+    color: var(--secondary-color-1);
     text-align: center;
-
+    
     /* h5 */
     font-family: Montserrat;
     font-size: 16px;
@@ -667,7 +710,7 @@ section {
 
 .product-button h6 {
     color: var(--primary-color, #96BB7C);
-
+    
     /* h6 */
     font-family: Montserrat;
     font-size: 14px;
@@ -688,11 +731,11 @@ section {
     /* light-drop-shadow */
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
     margin: 10px;
-
-
+    
+    
     color: var(--light-text-color, #FFF);
     text-align: center;
-
+    
     /* h6 */
     font-family: Montserrat;
     font-size: 14px;
@@ -708,7 +751,7 @@ section {
     align-items: flex-start;
     gap: 10px;
     margin: 10px;
-
+    
 }
 
 .product-rating {
@@ -722,7 +765,7 @@ section {
 
 .product-rating span {
     color: var(--light-text-color, #FFF);
-
+    
     /* small */
     font-family: Montserrat;
     font-size: 12px;
@@ -776,7 +819,7 @@ section {
     align-items: center;
     gap: 35px;
     width: 250px;
-
+    
     background: var(--light-background-color, #FFF);
 
     /* accentued-drop-shadow */
@@ -786,7 +829,7 @@ section {
 .card-item h6 {
     color: var(--second-text-color, #737373);
     text-align: center;
-
+    
     /* h6 */
     font-family: Montserrat;
     font-size: 14px;
@@ -799,7 +842,7 @@ section {
 
 .card-item .primary-text-color {
     color: var(--primary-color, #96BB7C);
-
+    
     /* h2 */
     font-family: Montserrat;
     font-size: 40px;
@@ -813,15 +856,15 @@ section {
 .card-item-btn {
 
     padding: 15px 40px;
-
-
+    
+    
     border-radius: 5px;
     background: var(--primary-color, #96BB7C);
     max-width: 200px;
-
+    
     color: var(--light-text-color, #FFF);
     text-align: center;
-
+    
     /* btn-text */
     font-family: Montserrat;
     font-size: 14px;
@@ -838,9 +881,9 @@ section {
     height: 56px;
     justify-content: center;
     align-items: center;
-
+    
     border-radius: 200px;
-
+    
 }
 
 
@@ -869,12 +912,12 @@ section {
 }
 
 
-.avtar {
+/* .avtar {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-
-}
+    
+} */
 
 
 
@@ -890,7 +933,7 @@ section {
 .card-content .paragraph {
     color: var(--second-text-color, #737373);
     text-align: center;
-
+    
     /* paragraph */
     font-family: Montserrat;
     font-size: 14px;
@@ -910,7 +953,7 @@ section {
 .user-title {
     color: var(--text-color, #252B42);
     text-align: center;
-
+    
     /* h5 */
     font-family: Montserrat;
     font-size: 16px;
@@ -921,10 +964,24 @@ section {
     letter-spacing: 0.1px;
 }
 
-.info h6 {
-    color: var(--second-text-color, #737373);
-    text-align: center;
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+}
+.info img{
+    width: 50px;
+}
 
+.info h5{
+    color: var(--primary-color);
+}
+
+.info h6 {
+    color: var(--text-color);
+    text-align: center;
+    
     /* h6 */
     font-family: Montserrat;
     font-size: 14px;
@@ -976,7 +1033,7 @@ input[type=submit] {
     border-radius: 0px 5px 5px 0px;
     border: 1px solid #E6E6E6;
     background: var(--primary-color, #96BB7C);
-
+    
     color: var(--light-text-color, #FFF);
     text-align: center;
     font-family: Montserrat;
@@ -1002,8 +1059,8 @@ input[type=submit] {
 }
 
 .footer-col h5 {
-
-
+    
+    
     /* h5 */
     font-family: Montserrat;
     font-size: 16px;
@@ -1019,8 +1076,8 @@ input[type=submit] {
 }
 
 .footer-col li {
-
-
+    
+    
     /* link */
     font-family: Montserrat;
     font-size: 14px;
@@ -1067,4 +1124,7 @@ footer {
 
 .p-10 {
     padding: 10px;
+}
+.bg-dark .paragraph,h2{
+    color: var(--light-background-color);
 }
